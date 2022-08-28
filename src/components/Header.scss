@@ -1,0 +1,11 @@
+@import url("../App.scss");
+
+.header {
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+  flex: 1;
+  font-size: 64px;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: azure;
+}
