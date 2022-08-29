@@ -1,0 +1,98 @@
+@import "App.scss";
+
+.header {
+  margin-top: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.84);
+  color: white;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+
+    width: 1130px;
+    margin: auto;
+    padding: 0px 75px;
+  }
+
+  &__logo {
+    height: 48px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: fit-content;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin: 0px 8px;
+
+    transition: 0.2s ease-out;
+
+    cursor: pointer;
+    &:hover {
+      color: $primary1;
+    }
+
+    & svg {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+
+    & svg {
+      font-size: 28px;
+    }
+
+    &__qnt {
+      background-color: $primary-yellow;
+      min-width: 30px;
+      padding: 1px 0px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-weight: 500;
+      border-radius: 44px;
+      position: absolute;
+      right: -10px;
+      bottom: -1px;
+    }
+  }
+
+  &__acount {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+
+  &__ava {
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  &__username {
+    margin: 0 8.5px;
+  }
+}

@@ -1,19 +1,69 @@
-:root {
-  --primary: #e84c51;
-  --primary2: rgba(0, 0, 0, 0.87);
+$primary1: #e84c51;
+$primary2: rgba(0, 0, 0, 0.87);
+$primary-yellow: #fbb403;
+
+$scrollbar-color: #909090;
+$scrollbar-background-color: #f5f5f5;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
 }
 
-.App {
-  text-align: center;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 14px;
 }
 
 a {
   text-decoration: none;
 }
 
+svg,
 img {
   //remove space below img ...
   vertical-align: top;
-
   user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+  background-color: $scrollbar-background-color;
+}
+
+::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid transparent;
+
+  background-clip: content-box;
+  background-color: $scrollbar-color;
+  background-clip: content-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }

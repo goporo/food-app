@@ -1,11 +1,12 @@
-@import url("../App.scss");
+@import "App.scss";
 
-.header {
+.footer {
   justify-content: center;
+
   font-weight: bold;
   display: flex;
   flex: 1;
   font-size: 64px;
-  background-color: rgba(0, 0, 0, 0.84);
+  background-color: $primary2;
   color: azure;
 }
