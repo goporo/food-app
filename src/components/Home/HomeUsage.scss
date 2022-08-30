@@ -1,6 +1,98 @@
+@import "App";
+
 .home-usage {
-  height: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+  margin: 100px 0;
   background-color: white;
   color: black;
+
+  &__yellow {
+    color: $primary-yellow-color;
+    font-size: 18px;
+    font-family: "Pangolin", cursive;
+  }
+
+  &__heading {
+    font-size: 32px;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+
+  &__steps {
+    margin-top: 50px;
+  }
+
+  &__step:hover &__content {
+    color: $primary-red-color;
+  }
+
+  &__step-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & span {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-size: 13px;
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 5px solid $primary-white-color;
+      color: $primary-white-color;
+      background-color: $primary-red-color;
+      transition: all 0.25s ease;
+    }
+
+    &:hover span {
+      border-color: $primary-red-color;
+      color: $primary-red-color;
+      background-color: $primary-white-color;
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 45px;
+    cursor: pointer;
+
+    &-img {
+      border: 15px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    &-arrow {
+      content: "";
+      position: absolute;
+      right: -45%;
+      top: 50%;
+      height: 28px;
+      width: 90px;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+
+      @include respond(mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: all 0.25s ease;
+  }
 }

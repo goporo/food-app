@@ -28,11 +28,12 @@
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
 
-    width: 100%;
+    width: 75%;
     margin: auto;
     padding: 0px 75px;
 
     @include respond(mobile) {
+      width: 100%;
       padding: 0px 15px;
     }
   }
@@ -69,7 +70,7 @@
 
     cursor: pointer;
     &:hover {
-      color: $primary1;
+      color: $primary-red-color;
     }
 
     & svg {
@@ -88,7 +89,7 @@
     }
 
     &__qnt {
-      background-color: $primary-yellow;
+      background-color: $primary-yellow-color;
       min-width: 30px;
       padding: 1px 0px;
       display: flex;
