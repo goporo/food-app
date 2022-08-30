@@ -1,3 +1,5 @@
+@import "App.scss";
+
 .home-banner {
   height: 800px;
   width: 100%;
@@ -12,6 +14,7 @@
     width: 1130px;
     height: 100%;
     padding: 0px 75px;
+    margin: auto;
 
     color: white;
   }
@@ -21,14 +24,42 @@
   }
 
   &__title {
+    // font-family: "Roboto", sans-serif;
+
     font-size: 18px;
+    font-weight: 600;
   }
 
   &__desc {
     font-size: 72px;
+    font-weight: 600;
+    margin: 5px 0 15px;
+
+    & strong {
+      color: $primary1;
+    }
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     font-size: 13px;
+    font-weight: 500;
+    background-color: $primary1;
+    padding: 10px 15px;
+    border-radius: 44px;
+    width: fit-content;
+    line-height: 1.5;
+    cursor: pointer;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 3px;
+    }
+
+    &:hover {
+      background-color: #c33d3b !important;
+    }
   }
 }
