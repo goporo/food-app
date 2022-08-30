@@ -1,3 +1,5 @@
+@import "assets/styles/mixins";
+
 $primary1: #e84c51;
 $primary2: rgba(0, 0, 0, 0.87);
 $primary-yellow: #fbb403;
@@ -23,6 +25,14 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 14px;
+
+  .MuiContainer-root {
+    padding: 0 75px;
+
+    @include respond(mobile) {
+      padding: 0 10px;
+    }
+  }
 }
 
 a {
@@ -66,4 +76,15 @@ ul {
 .col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

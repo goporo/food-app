@@ -1,18 +1,25 @@
 @import "App.scss";
+@import "assets/styles/mixins";
+@import "assets/styles/colors";
 
 .header {
-  margin-top: 5px;
   position: fixed;
   top: 0;
+  z-index: 999;
+
   width: 100%;
+  // margin-top: 5px;
   padding: 8px 0;
   display: flex;
   justify-content: center;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.84);
   // background-color: rgba(0, 0, 0, 0);
-
   color: white;
+
+  @include respond(mobile) {
+    padding: 5px 0;
+  }
 
   &__wrapper {
     display: flex;
@@ -21,22 +28,35 @@
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
 
-    width: 1130px;
+    width: 100%;
     margin: auto;
     padding: 0px 75px;
+
+    @include respond(mobile) {
+      padding: 0px 15px;
+    }
   }
 
   &__logo {
     height: 48px;
     margin-right: 15px;
     cursor: pointer;
+
+    @include respond(mobile) {
+      height: 40px;
+      margin: auto;
+    }
   }
 
   &__list {
     display: flex;
-    margin: auto;
+    margin-right: auto;
     align-items: center;
     height: fit-content;
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 
   &__item {
@@ -87,6 +107,10 @@
     align-items: center;
     margin-left: 40px;
     cursor: pointer;
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 
   &__ava {
@@ -96,5 +120,23 @@
 
   &__username {
     margin: 0 8.5px;
+  }
+
+  &__row {
+    flex-direction: row;
+  }
+
+  .hamburger-btn {
+    display: none;
+    width: 33px;
+    height: 33px;
+
+    fill: $primary-white-color;
+
+    cursor: pointer;
+
+    @include respond(mobile) {
+      display: block;
+    }
   }
 }
