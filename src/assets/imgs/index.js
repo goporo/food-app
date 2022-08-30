@@ -1,6 +1,6 @@
 const images = {
     ava: require('./ava.png'),
-    sth: require('./sth.png'),
+    home_banner: require('./home_banner.png'),
 };
 
 export default images;
