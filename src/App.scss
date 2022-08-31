@@ -37,7 +37,7 @@ body {
   font-size: 14px;
 
   .MuiContainer-root {
-    padding: 0 75px;
+    padding: 0 35px;
 
     @include respond(mobile) {
       padding: 0 10px;
@@ -63,6 +63,12 @@ ul {
 strong {
   display: contents;
   color: $primary-red-color;
+}
+
+.primary__yellow {
+  color: $primary-yellow-color;
+  font-size: 18px;
+  font-family: "Pangolin", cursive;
 }
 
 ::-webkit-scrollbar {

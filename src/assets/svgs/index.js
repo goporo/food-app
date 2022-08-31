@@ -10,6 +10,9 @@ const svgs = {
     lunch: require('./Home/lunch.svg').default,
     pork: require('./Home/pork.svg').default,
     tea: require('./Home/tea.svg').default,
+    smallDelivery: require('./Home/small-delivery.svg').default,
+    bigDelivery: require('./Home/big-delivery.svg').default,
+
 
 };
 

@@ -38,7 +38,7 @@ const HomeIngredients = () => {
                 </div>
             </div>
             <div className='home-ingredients__bottom'>
-                <div className='home-usage__yellow'>Best food</div>
+                <div className='primary__yellow'>Best food</div>
                 <h2 className='home-ingredients__bottom-desc'>Super delicious Steak <strong>Hamburger</strong></h2>
                 <div className='home-ingredients__bottom-price'><strong >$25.00</strong></div>
                 <div className='home-ingredients__bottom-btn'>ORDER NOW</div>

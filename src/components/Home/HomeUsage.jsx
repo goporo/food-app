@@ -7,7 +7,7 @@ import { homeWorkData } from "utils/staticData";
 const HomeUsage = () => {
     return (
         <div className='home-usage'>
-            <div className="home-usage__yellow">Order now!</div>
+            <div className="primary__yellow">Order now!</div>
             <h2 className='home-usage__heading'>How it works</h2>
             <div className="home-usage__steps">
                 <Grid container spacing={3}>

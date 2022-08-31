@@ -1,12 +1,10 @@
 @import "App.scss";
 
 .home-category {
-  margin-top: 100px;
-  padding: 0px 75px;
+  margin: 100px 0;
 
   @include respond(mobile) {
     margin: 40px 0 50px;
-    padding: 0 10px;
   }
 
   &__container {
@@ -28,7 +26,7 @@
 
   &__cards {
     position: relative;
-    width: 95%;
+    width: 90%;
     display: flex;
     padding: 40px 0px 70px;
 
@@ -108,10 +106,10 @@
   }
 
   .prev-btn {
-    left: -25px;
+    left: -45px;
   }
 
   .next-btn {
-    right: -25px;
+    right: -45px;
   }
 }

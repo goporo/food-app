@@ -1,4 +1,5 @@
 import HomeCategory from 'components/Home/HomeCategory';
+import HomeDelivery from 'components/Home/HomeDelivery';
 import HomeIngredients from 'components/Home/HomeIngredients';
 import HomeUsage from 'components/Home/HomeUsage';
 import Test from 'components/Home/Test';
@@ -19,6 +20,7 @@ function App() {
         <HomeUsage />
         <HomeIngredients />
         <HomeCategory />
+        <HomeDelivery />
         <Footer />
 
       </Router>
