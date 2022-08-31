@@ -8,8 +8,8 @@
   min-height: 75rem;
 
   background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  // background-repeat: no-repeat;
   background-attachment: fixed;
 
   @include respond(mobile) {
