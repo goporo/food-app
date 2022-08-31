@@ -1,4 +1,5 @@
 import images from "assets/imgs";
+import svgs from "assets/svgs";
 
 // import {
 //   Beef,
@@ -104,44 +105,44 @@ const homeIngredientsData = {
   ],
 };
 
-// const homeCategoryData = [
-//   {
-//     img: Burger,
-//     name: "breakfast",
-//   },
-//   {
-//     img: Coffee,
-//     name: "coffee",
-//   },
-//   {
-//     img: Pork,
-//     name: "pork ham",
-//   },
-//   {
-//     img: Dinner,
-//     name: "dinner",
-//   },
-//   {
-//     img: Tea,
-//     name: "tea",
-//   },
-//   {
-//     img: Lunch,
-//     name: "lunch",
-//   },
-//   {
-//     img: Juice,
-//     name: "juice",
-//   },
-//   {
-//     img: Chicken,
-//     name: "grilled chicken",
-//   },
-//   {
-//     img: Beef,
-//     name: "roast beef",
-//   },
-// ];
+const homeCategoryData = [
+  {
+    img: svgs.burger,
+    name: "breakfast",
+  },
+  {
+    img: svgs.coffee,
+    name: "coffee",
+  },
+  {
+    img: svgs.pork,
+    name: "pork ham",
+  },
+  {
+    img: svgs.dinner,
+    name: "dinner",
+  },
+  {
+    img: svgs.tea,
+    name: "tea",
+  },
+  {
+    img: svgs.lunch,
+    name: "lunch",
+  },
+  {
+    img: svgs.juice,
+    name: "juice",
+  },
+  {
+    img: svgs.chicken,
+    name: "grilled chicken",
+  },
+  {
+    img: svgs.beef,
+    name: "roast beef",
+  },
+];
 
 // const homeProductsData = [
 //   {
@@ -277,7 +278,7 @@ const homeIngredientsData = {
 export {
   // homeBannersData,
   homeWorkData,
-  // homeCategoryData,
+  homeCategoryData,
   homeIngredientsData,
   // homeReviewsData,
   // homeProductsData,

@@ -1,6 +1,7 @@
 import HomeCategory from 'components/Home/HomeCategory';
 import HomeIngredients from 'components/Home/HomeIngredients';
 import HomeUsage from 'components/Home/HomeUsage';
+import Test from 'components/Home/Test';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
