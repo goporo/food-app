@@ -11,8 +11,14 @@ const images = {
     ingredients: require('./ingredients.jpg'),
     shape1: require('./shape-1.png'),
     shape2: require('./shape-2.png'),
-
-
+    product1: require('./product-1.png'),
+    product2: require('./product-2.png'),
+    product3: require('./product-3.png'),
+    product4: require('./product-4.png'),
+    review1: require('./user-review-1.jpg'),
+    review2: require('./user-review-2.jpg'),
+    review3: require('./user-review-3.jpg'),
+    analysisThumb: require('./analysis-thumb.jpg'),
 
 
 };

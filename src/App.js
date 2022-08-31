@@ -1,8 +1,10 @@
 import HomeCategory from 'components/Home/HomeCategory';
 import HomeDelivery from 'components/Home/HomeDelivery';
 import HomeIngredients from 'components/Home/HomeIngredients';
+import HomeProduct from 'components/Home/HomeProduct';
+import HomeReviews from 'components/Home/HomeReviews';
+import HomeStatis from 'components/Home/HomeStatis';
 import HomeUsage from 'components/Home/HomeUsage';
-import Test from 'components/Home/Test';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -21,8 +23,10 @@ function App() {
         <HomeIngredients />
         <HomeCategory />
         <HomeDelivery />
+        <HomeProduct />
+        <HomeStatis />
+        <HomeReviews />
         <Footer />
-
       </Router>
     </div>
   );

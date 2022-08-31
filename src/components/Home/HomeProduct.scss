@@ -1,0 +1,256 @@
+@import "App.scss";
+
+.home-product-main {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home-product {
+  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.01);
+
+  transition: all 0.35s ease-in-out;
+
+  @include respond(mobile) {
+    background-color: rgba($primary-red-color, 0.25);
+  }
+
+  @include respond(phone) {
+    margin: 0 40px;
+  }
+
+  &:hover {
+    background-color: rgba($primary-red-color, 0.25);
+
+    @include respond(desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  &__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($primary-red-color, 0.75);
+    clip-path: ellipse(70% 80% at 50% 13%);
+
+    transition: all 0.35s ease-in-out;
+
+    @include respond(mobile) {
+      background-color: $primary-red-color;
+    }
+  }
+
+  &:hover &__wrapper:before {
+    background-color: $primary-red-color;
+  }
+
+  &__img {
+    width: 20rem;
+
+    @include respond(tablet) {
+      width: 15rem;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+
+    @include respond(tablet) {
+      font-size: 22px;
+    }
+  }
+
+  .btn {
+    position: relative;
+
+    font-size: 1.3rem;
+    padding: 12px 18px;
+    margin-top: 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+
+    color: $primary-white-color;
+    background-color: $primary-red-color;
+
+    cursor: pointer;
+
+    @include respond(mobile) {
+      display: block;
+      padding: 10px 15px;
+      margin-left: auto;
+      margin-right: auto;
+
+      background-color: $primary-white-color;
+    }
+  }
+
+  .btn span {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+
+    transition: all 0.25s ease-in-out;
+
+    @include respond(mobile) {
+      color: $primary-red-color;
+    }
+  }
+
+  .btn:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+
+    width: 0;
+    height: 100%;
+    border-radius: 100px;
+
+    background-color: $primary-white-color;
+
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover .btn:before {
+    width: 100%;
+  }
+
+  &:hover .btn {
+    color: $primary-red-color;
+  }
+
+  &__content {
+    padding: 0 10px;
+  }
+
+  &__name {
+    font-size: 2.2rem;
+    margin: 10px 0;
+
+    @include respond(mobile) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+
+    color: $primary-grey-color;
+
+    transition: all 0.2s ease-out;
+
+    @include respond(mobile) {
+      font-size: 1.35rem;
+      overflow: hidden;
+      display: block;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  &:hover &__description {
+    color: #737373;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 10px 0 20px;
+
+    color: $primary-yellow-color;
+
+    transition: all 0.25s ease-in-out;
+
+    @include respond(mobile) {
+      color: $primary-red-color;
+    }
+  }
+
+  &:hover &__price {
+    color: $primary-red-color;
+  }
+}
+
+.home-products {
+  margin-bottom: 80px;
+  text-align: center;
+
+  @include respond(mobile) {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    padding: 20px 0px 50px;
+    display: flex;
+    margin-top: 35px;
+
+    @include respond(mobile) {
+      margin-top: 10px;
+    }
+  }
+
+  // custom swiper
+  .swiper-container {
+    padding: 20px 0 50px;
+  }
+
+  .swiper-pagination {
+    bottom: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    content: "";
+    background-color: transparent;
+
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 2px solid $primary-yellow-color;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    &:before {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+
+      width: 1.35rem;
+      height: 1.35rem;
+      border-radius: 50%;
+      transform: translate(2.2px, 1.5px) scale(0.7);
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+
+      background-color: $primary-yellow-color;
+    }
+
+    &-active:before {
+      opacity: 1;
+      transform: translate(2.2px, 1.5px) scale(1);
+    }
+  }
+}

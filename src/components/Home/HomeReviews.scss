@@ -1,0 +1,167 @@
+@import "App.scss";
+
+.home-reviews {
+  position: relative;
+
+  margin: 80px 0;
+  text-align: center;
+
+  @include respond(mobile) {
+    margin: 70px 0 60px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+
+    margin: auto;
+    display: flex;
+    width: 175px;
+    height: 175px;
+
+    @include respond(mobile) {
+      width: 135px;
+      height: 135px;
+    }
+  }
+
+  &__img-wrapper:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: translateX(-7px) rotate(35deg);
+
+    background-color: $primary-yellow-color;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  &__name {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+
+    @include respond(tablet) {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    @include respond(phone) {
+      font-size: 18.5px;
+    }
+  }
+
+  &__role {
+    font-size: 15px;
+
+    color: $primary-grey-color;
+
+    @include respond(phone) {
+      font-size: 14px;
+    }
+  }
+
+  &__comment {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 0 60px;
+
+    @include respond(mobile) {
+      font-size: 15px;
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    @include respond(phone) {
+      font-size: 14px;
+      overflow: hidden;
+      display: block;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  // custom swiper
+  .swiper-container {
+    padding: 30px 0;
+  }
+
+  .swiper-container {
+    padding: 20px 0 50px;
+  }
+
+  .swiper-pagination {
+    bottom: 10px;
+    cursor: default;
+
+    @include respond(mobile) {
+      bottom: 22px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    content: "";
+    background-color: transparent;
+
+    width: 16px;
+    height: 16px;
+    border: 2px solid $primary-yellow-color;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    &:before {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      transform: translate(2px, 1.5px) scale(0.7);
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+
+      background-color: $primary-yellow-color;
+    }
+
+    &-active:before {
+      opacity: 1;
+      transform: translate(2px, 1.5px) scale(1);
+    }
+
+    @include respond(mobile) {
+      width: 14.5px;
+      height: 14.5px;
+    }
+
+    &:before {
+      @include respond(mobile) {
+        width: 11.5px;
+        height: 11.5px;
+        transform: translate(1.2px, 1.2px) scale(0.7);
+      }
+    }
+
+    &-active:before {
+      @include respond(mobile) {
+        transform: translate(1.2px, 1.2px) scale(1);
+      }
+    }
+  }
+}

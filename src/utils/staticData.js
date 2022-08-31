@@ -144,97 +144,89 @@ const homeCategoryData = [
   },
 ];
 
-// const homeProductsData = [
-//   {
-//     img: ProductOne,
-//     name: "Crazy Burger",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "20",
-//   },
-//   {
-//     img: ProductTwo,
-//     name: "Beefcakes Burgers",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "34",
-//   },
-//   {
-//     img: ProductThree,
-//     name: "The Crispy Bun",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "15",
-//   },
-//   {
-//     img: ProductFour,
-//     name: "Bugout Burgers",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "60",
-//   },
-//   {
-//     img: ProductOne,
-//     name: "Crazy Burger",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "20",
-//   },
-//   {
-//     img: ProductTwo,
-//     name: "Beefcakes Burgers",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "34",
-//   },
-//   {
-//     img: ProductThree,
-//     name: "The Crispy Bun",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "15",
-//   },
-//   {
-//     img: ProductFour,
-//     name: "Bugout Burgers",
-//     description: "Buarning do amet contur dicivt suia non nuameius velit",
-//     price: "60",
-//   },
-// ];
+const homeProductsData = [
+  {
+    img: images.product1,
+    name: "Crazy Burger",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "49",
+  },
+  {
+    img: images.product2,
+    name: "Beefcakes Burgers",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "39",
+  },
+  {
+    img: images.product3,
+    name: "The Crispy Bun",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "19",
+  },
+  {
+    img: images.product4,
+    name: "Bugout Burgers",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "69",
+  },
+  {
+    img: images.product1,
+    name: "Juicy Burger",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "29",
+  },
+  {
+    img: images.product2,
+    name: "Lava Burgers",
+    description: "Buarning do amet contur dicivt suia non nuameius velit",
+    price: "39",
+  },
+];
 
-// const homeReviewsData = [
-//   {
-//     img: ReviewOne,
-//     name: "mark zuckerberg",
-//     role: "Co-founding Facebook, Inc",
-//     comment:
-//       "I chose food G because of their value And incredible superior customer Service they really awesome Food with quality service Ha of their value And incredible sup with quality",
-//   },
-//   {
-//     img: ReviewTwo,
-//     name: "Rose",
-//     role: "Main vocalist of Backpink group",
-//     comment:
-//       "Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!",
-//   },
-//   {
-//     img: ReviewThree,
-//     name: "Tim Cook",
-//     role: "CEO of Apple",
-//     comment:
-//       "I had lunch with some of my colleagues at Echo on Day 1. I had the wedge salad - it was delicious. On Night 2, I enjoyed a drink at the bar. I had a Margarita. The service was excellent",
-//   },
-// ];
+const homeReviewsData = [
+  {
+    img: images.review1,
+    name: "mark zuckerberg",
+    role: "Co-founding Facebook, Inc",
+    comment:
+      "I chose food G because of their value And incredible superior customer Service they really awesome Food with quality service Ha of their value And incredible sup with quality",
+  },
+  {
+    img: images.review2,
+    name: "Rose",
+    role: "Main vocalist of Backpink group",
+    comment:
+      "Had dinner with girl friends. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!",
+  },
+  {
+    img: images.review3,
+    name: "Tim Cook",
+    role: "CEO of Apple",
+    comment:
+      "I had lunch with some of my colleagues at Echo on Day 1. I had the wedge salad - it was delicious. On Night 2, I enjoyed a drink at the bar. I had a Margarita. The service was excellent",
+  },
+];
 
-// const homeAnalysisData = [
-//   {
-//     suffix: "+",
-//     description: "Cups of Coffee",
-//   },
-//   {
-//     suffix: "+",
-//     description: "Orders Everyday",
-//   },
-//   {
-//     description: "Skilled Professionals",
-//   },
-//   {
-//     description: "Sandwichs at Hour",
-//   },
-// ];
+const homeAnalysisData = [
+  {
+    suffix: "+",
+    description: "Cups of Coffee",
+    quantity: 358
+  },
+  {
+    suffix: "+",
+    description: "Orders Everyday",
+    quantity: 2578
+  },
+  {
+    description: "Skilled Professionals",
+    quantity: 52
+  },
+  {
+    description: "Sandwichs at Hour",
+    quantity: 31
+  },
+];
 
 // // detail
 // const detailTableData = [
@@ -280,8 +272,8 @@ export {
   homeWorkData,
   homeCategoryData,
   homeIngredientsData,
-  // homeReviewsData,
-  // homeProductsData,
-  // homeAnalysisData,
+  homeReviewsData,
+  homeProductsData,
+  homeAnalysisData,
   // detailTableData,
 };
