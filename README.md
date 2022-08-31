@@ -1,3 +1,31 @@
-# Getting Started with Create React App
+<h1 align='center'>Food App 🍕</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### **🍺 First Deploy:** https://monumental-rabanadas-2fefb8.netlify.app/
+
+#### **🍩 Technologies**
+
+- Frontend
+
+  - SCSS
+  - Material UI
+  - Axios
+  - React-router-dom
+  - Redux-toolkit
+  - Styled-component
+  - Swiper
+  - Gsap
+  - Yup
+  - React-hook-form
+  - React-lazy-load-image-component
+  - React-paginate
+  - React-image-magnifiers
+  - React-toastify
+  - React-timeago
+  - React-content-loader
+  - React-select
+
+- Backend
+
+  - Firebase (Authentication, Firestore)
+  
+#### **🍩Inspired by** https://github.com/igdev116/food-G-app
