@@ -11,8 +11,7 @@ const HomeBanner = () => {
                 <div className='home-banner__wrapper'>
                     <div className='home-banner__title'>ENJOY YOUR MEAL</div>
                     <div className='home-banner__desc'>
-                        Good food is wise
-                        <strong> medicine</strong>
+                        Good food is wise <strong>medicine</strong>
                     </div>
                     <div className='home-banner__button-wrapper'>
                         <div className='home-banner__button'>

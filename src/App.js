@@ -1,3 +1,5 @@
+import HomeCategory from 'components/Home/HomeCategory';
+import HomeIngredients from 'components/Home/HomeIngredients';
 import HomeUsage from 'components/Home/HomeUsage';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -14,6 +16,8 @@ function App() {
         <Header />
         <HomeBanner />
         <HomeUsage />
+        <HomeIngredients />
+        <HomeCategory />
         <Footer />
 
       </Router>

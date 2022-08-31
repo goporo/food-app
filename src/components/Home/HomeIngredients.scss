@@ -1,0 +1,159 @@
+@import "App.scss";
+@import "assets/styles/mixins";
+
+.home-ingredients {
+  &__top {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    background-position-y: -50px;
+    // background-repeat: no-repeat;
+    background-size: contain;
+
+    @include respond(mobile) {
+      padding: 0 15px;
+    }
+
+    @include respond(phone) {
+      background: none;
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    &-left {
+      margin-right: auto;
+    }
+
+    &-right {
+      margin-left: auto;
+    }
+  }
+
+  &__top-left &__card-wrapper:nth-child(2) {
+    transform: translateX(60px);
+
+    @include respond(mobile) {
+      transform: translateX(0);
+    }
+  }
+
+  &__top-right &__card-wrapper:nth-child(2) {
+    transform: translateX(-60px);
+
+    @include respond(mobile) {
+      transform: translateX(0);
+    }
+  }
+
+  &__card {
+    position: relative;
+    flex: 1;
+    max-width: 380px;
+    min-height: 180px;
+    padding: 40px;
+    margin: 55px 0;
+    border-radius: 4px;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.2);
+
+    background-color: $primary-white-color;
+
+    transition: all 0.25s ease-in-out;
+    @include respond(mobile) {
+      min-height: 140px;
+      padding: 35px 40px;
+      margin: 35px 0;
+    }
+
+    & span {
+      position: absolute;
+      top: -20%;
+      left: 20px;
+
+      font-size: 22px;
+      width: 60px;
+      height: 60px;
+      padding: 18px;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 1px 0 20px rgba(0, 0, 0, 0.12);
+
+      color: $primary-black-color;
+      background-color: $primary-white-color;
+    }
+
+    &-title {
+      font-size: 22px;
+      margin-bottom: 8px;
+
+      color: $primary-black-color;
+
+      transition: all 0.12s ease-in-out;
+    }
+
+    &-content {
+      font-size: 14px;
+      line-height: 1.6;
+
+      color: $primary-grey-color;
+
+      transition: all 0.12s ease-in-out;
+
+      @include respond(mobile) {
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.3);
+      background-color: $primary-red-color;
+    }
+
+    &:hover :is(&-title, &-content) {
+      color: $primary-white-color;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    text-align: center;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &-desc {
+      margin-top: 5px;
+      font-size: 32px;
+    }
+
+    &-price {
+      margin: 5px 0px 15px;
+      font-size: 36px;
+    }
+
+    &-btn {
+      font-weight: 500;
+      font-size: 13px;
+      padding: 11px 15px;
+      border-radius: 50px;
+      background-color: $primary-red-color;
+      color: $primary-white-color;
+      box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+
+      &:hover {
+        background-color: #c33d3b !important;
+      }
+    }
+  }
+}

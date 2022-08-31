@@ -20,6 +20,10 @@
     padding: 0px 75px;
     margin: auto;
     color: white;
+
+    @include respond(mobile) {
+      padding: 0px 10px;
+    }
   }
 
   &__wrapper {
@@ -48,13 +52,9 @@
     margin: 5px 0 15px;
 
     @include respond(mobile) {
-      display: flex;
-      justify-content: center;
-      font-size: 45px;
-    }
+      text-align: center;
 
-    & strong {
-      color: $primary-red-color;
+      font-size: 45px;
     }
   }
 

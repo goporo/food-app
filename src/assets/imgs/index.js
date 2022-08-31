@@ -8,6 +8,10 @@ const images = {
     arrow1: require('./arrow-1.png'),
     arrow2: require('./arrow-2.png'),
     arrow3: require('./arrow-3.png'),
+    ingredients: require('./ingredients.jpg'),
+    shape1: require('./shape-1.png'),
+    shape2: require('./shape-2.png'),
+
 
 
 

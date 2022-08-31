@@ -63,46 +63,46 @@ const homeWorkData = [
   },
 ];
 
-// const homeIngredientsData = {
-//   leftData: [
-//     {
-//       title: "Mild Butter",
-//       content:
-//         "Patak's Butter Chicken Mild is a creamy tomato and butter flavour curry sauce",
-//       order: "01",
-//     },
-//     {
-//       title: "Slices Beef",
-//       content: "Get quality Beef Slices at Tesco. Shop in store or online",
-//       order: "02",
-//     },
-//     {
-//       title: "Sleek Onion",
-//       content:
-//         "Green onions have a sleek linear shape with white or pale-green bulbs and long green tops",
-//       order: "03",
-//     },
-//   ],
-//   rightData: [
-//     {
-//       title: "Fresh Bread",
-//       content:
-//         "Homemade bread is more nutritious than your store-bought variety",
-//       order: "04",
-//     },
-//     {
-//       title: "Lettuce Leaf",
-//       content:
-//         "It is most often grown as a leaf vegetable, but sometimes for its stem and seeds",
-//       order: "05",
-//     },
-//     {
-//       title: "Glow Cheese",
-//       content: "Glowfood. Cheese. Is. Unreal! As a cheese fanatic",
-//       order: "06",
-//     },
-//   ],
-// };
+const homeIngredientsData = {
+  leftData: [
+    {
+      title: "Mild Butter",
+      content:
+        "Patak's Butter Chicken Mild is a creamy tomato and butter flavour curry sauce",
+      order: "01",
+    },
+    {
+      title: "Slices Beef",
+      content: "Get quality Beef Slices at Tesco. Shop in store or online",
+      order: "02",
+    },
+    {
+      title: "Sleek Onion",
+      content:
+        "Green onions have a sleek linear shape with white or pale-green bulbs and long green tops",
+      order: "03",
+    },
+  ],
+  rightData: [
+    {
+      title: "Fresh Bread",
+      content:
+        "Homemade bread is more nutritious than your store-bought variety",
+      order: "04",
+    },
+    {
+      title: "Lettuce Leaf",
+      content:
+        "It is most often grown as a leaf vegetable, but sometimes for its stem and seeds",
+      order: "05",
+    },
+    {
+      title: "Glow Cheese",
+      content: "Glowfood. Cheese. Is. Unreal! As a cheese fanatic",
+      order: "06",
+    },
+  ],
+};
 
 // const homeCategoryData = [
 //   {
@@ -278,7 +278,7 @@ export {
   // homeBannersData,
   homeWorkData,
   // homeCategoryData,
-  // homeIngredientsData,
+  homeIngredientsData,
   // homeReviewsData,
   // homeProductsData,
   // homeAnalysisData,
