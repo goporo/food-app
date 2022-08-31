@@ -1,4 +1,4 @@
-<h1 align='center'>Food-G Order App 🍕</h1>
+<h1 align='center'>Food App 🍕</h1>
 
 #### **🍺 First Deploy:** https://monumental-rabanadas-2fefb8.netlify.app/
 
